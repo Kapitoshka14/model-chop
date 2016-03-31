@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../static/css/main.css">
+<title>Магазин</title>
+<div><a href="/">обновить</a><p>{{ text }}</p></div>
+<div>
+  <h1>Товары</h1>
+  {% for i in tov %}
+    <div class="bl">
+      <h2>{{ i.name }}</h2>
+      <p>Цена: {{ i.price }}</p>
+      <form action="" method="post">
+        {% csrf_token %}
+        <input name="id" value="{{ i.id }}" type="hidden"/>
+        <input name="ch" value="{{ i.price }}" type="hidden">
+        <input type="submit" value="заказать">
+      </form>
+    </div>
+  {% endfor %}
+</div>
+<div>
+  <h1>Заказы</h1>
+  {% for i in zak %}
+    <div class="bl">
+      <h2>{{ i.number }}</h2>
+      <p>Цена: {{ i.price }}</p>
+      <form action="" method="post">
+        {% csrf_token %}
+        <input type="submit" value="оплатить">
+      </form>
+    </div>
+  {% endfor %}
+</div>

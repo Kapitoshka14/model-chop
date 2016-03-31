@@ -1,0 +1,18 @@
+*{margin:0;border:0;padding:0;}
+body{
+    background: #777;
+}
+div, a{
+  background: #aaa;
+  margin: 10px;
+  padding: 10px;
+}
+.bl, a{
+  display: inline-block;
+  background: #bbb;
+}
+a{
+  padding: 10px;
+  color: #000;
+  text-decoration: none;
+}

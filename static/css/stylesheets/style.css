@@ -1,0 +1,43 @@
+/*
+Error: Properties are only allowed within rules, directives, mixin includes, or other properties.
+        on line 1 of D:/web/shop/static/css/sass/style.sass
+
+1: div:
+2: 	backgroud: #000
+3: 	color: #fff
+
+Backtrace:
+D:/web/shop/static/css/sass/style.sass:1
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/check_nesting.rb:13:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/check_nesting.rb:49:in `visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/check_nesting.rb:57:in `visit_root'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/check_nesting.rb:15:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:24:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/root_node.rb:35:in `css_tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/root_node.rb:20:in `render'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:268:in `render'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Program Files (x86)/Koala/rubygems/gems/compass-1.0.1/lib/compass/sass_compiler.rb:40:in `compile!'
+C:/Program Files (x86)/Koala/rubygems/gems/compass-1.0.1/lib/compass/commands/update_project.rb:49:in `perform'
+C:/Program Files (x86)/Koala/rubygems/gems/compass-1.0.1/lib/compass/commands/base.rb:18:in `execute'
+C:/Program Files (x86)/Koala/rubygems/gems/compass-1.0.1/lib/compass/commands/project_base.rb:19:in `execute'
+C:/Program Files (x86)/Koala/rubygems/gems/compass-1.0.1/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+C:/Program Files (x86)/Koala/rubygems/gems/compass-1.0.1/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+C:/Program Files (x86)/Koala/rubygems/gems/compass-1.0.1/bin/compass:30:in `block in <top (required)>'
+C:/Program Files (x86)/Koala/rubygems/gems/compass-1.0.1/bin/compass:44:in `call'
+C:/Program Files (x86)/Koala/rubygems/gems/compass-1.0.1/bin/compass:44:in `<top (required)>'
+C:/Program Files (x86)/Koala/bin/compass:18:in `load'
+C:/Program Files (x86)/Koala/bin/compass:18:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Properties are only allowed within rules, directives, mixin includes, or other properties.\A         on line 1 of D:/web/shop/static/css/sass/style.sass\A \A 1: div:\A 2: 	backgroud: #000\A 3: 	color: #fff"; }
